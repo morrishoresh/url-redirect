@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "Url Redirect",
+  "version": "1.0",
+  "description": "Redirect URLs to other URLs based on user-defined wildcard rules.",
+  "icons": {
+    "48": "icon.svg",
+    "96": "icon.svg"
+  },
+  "browser_action": {
+    "default_title": "Url Redirect",
+    "default_icon": {
+      "48": "icon.svg",
+      "96": "icon.svg"
+    }
+  },
+  "permissions": [
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "url-redirect@local"
+    }
+  }
+}
