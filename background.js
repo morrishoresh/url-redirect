@@ -9,7 +9,7 @@ function loadRules() {
 // Convert a wildcard pattern ("*" = capture group) into a RegExp.
 // All other regex-special characters are escaped literally.
 function compileFrom(pattern) {
-  const escaped = pattern.replace(/[.+?^${}()|[\]\\]/g, "\\$&");
+  const escaped = pattern.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   const withGroups = escaped.split("\\*").join("(.*)");
   return new RegExp("^" + withGroups + "$");
 }
@@ -61,3 +61,4 @@ loadRules();
 browser.browserAction.onClicked.addListener(() => {
   browser.runtime.openOptionsPage();
 });
+

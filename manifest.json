@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Url Redirect",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": "Redirect URLs to other URLs based on user-defined wildcard rules.",
   "icons": {
     "48": "icon.svg",
