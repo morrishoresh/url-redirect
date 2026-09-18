@@ -1,17 +1,23 @@
 {
   "manifest_version": 2,
   "name": "Url Redirect",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Redirect URLs to other URLs based on user-defined wildcard rules.",
   "icons": {
-    "48": "icon.svg",
-    "96": "icon.svg"
+    "16": "icon-16.png",
+    "32": "icon-32.png",
+    "48": "icon-48.png",
+    "96": "icon-96.png",
+    "128": "icon-128.png"
   },
   "browser_action": {
     "default_title": "Url Redirect",
     "default_icon": {
-      "48": "icon.svg",
-      "96": "icon.svg"
+      "16": "icon-16.png",
+      "32": "icon-32.png",
+      "48": "icon-48.png",
+      "96": "icon-96.png",
+      "128": "icon-128.png"
     }
   },
   "permissions": [
